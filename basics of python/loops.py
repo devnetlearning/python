@@ -27,6 +27,22 @@ for i in range (a,b+1):
 print(multiply)
 
 
+#for example3 - aritmetic average (compare with the same example using while)
+
+values = 0
+i = 0
+
+
+for i in range(5):
+    value = int(input(" Input value: "))
+    if value > 0:
+        values = values + value
+        i += 1
+    else:
+            print("Value must be positive number" )
+    continue
+print(values/i)
+
 
 
 """
@@ -34,7 +50,7 @@ while - conditional loop
 break - exiting the loop
 """
 
-#while example - same function like in if statement but shorter and easier to expand
+#while example1 - same function like in if statement but shorter and easier to expand
 
 test = input(" What's your name?\n")
 tries = 0
@@ -50,3 +66,62 @@ elif test != "mark":
         tries = tries + 1
     else:
         print("Access granted")
+
+
+
+#wghile example2 arithmetic average with loop while
+
+values = 0
+i = 0
+
+
+while i < 5:
+    value = int(input(" Input value"))
+    if value > 0:
+        values = values + value
+        i += 1
+    else:
+            print("value must be positive number" )
+    continue
+print("arithmetic average: ", values/i)
+
+
+#while example3 adding 3 positive and even numbers. Inform if numbor is not positive or even
+
+summ = 0
+i = 0
+
+while i < 3:
+    number = int(input("Number: "))
+    if number % 2 == 0 and number > 0:
+        summ = summ + number
+        i += 1
+    else:
+            print(" This number is not even or positve. Try again")
+
+
+print(" Sum: ", summ)
+
+
+
+#while example4 guessing correct number. 3 tries to gues
+
+
+number = 17
+i = 0
+
+print("You have 3 tries to guess the number")
+
+while i <= 2:
+
+    guess = int(input("Your number: "))
+    i+=1
+    if guess > number:
+        print(" Wrong number. Correct number is lower!")
+    elif guess < number:
+            print(" Wrong number. Correct number is higher!")
+    else:
+            print(" Great! You guessed it")
+
+if guess != number:
+    print("Out of tries. You loose it!")
