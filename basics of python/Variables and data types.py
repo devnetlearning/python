@@ -28,7 +28,7 @@ the key and using it later. A value can be any Python object.
 - Set - unordered group of unique objects:
 
 test = {1,3,5,7,8,9,0,1,2}
-to join two sets without duplicates you should use pipe  "|"
+
 
 2.Immutable - not allowed to be changed (Constant values that you don't want
 to be changed)
@@ -47,6 +47,9 @@ to be changed)
 
 - Tuple - Orderer group of immutable objects:
 test = ( 12 , Amy , student )
+tuples can not be changed after defined.
+Used when you are sure that variables won't change.
+It's used in big application in order to save some memory.
 
 Build in operations for working with numbers:
 
