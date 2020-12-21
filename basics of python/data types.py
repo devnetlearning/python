@@ -117,3 +117,34 @@ print(config)
 {'interface': 'FastEthernet 0/1', 'ipadress': '192.168.1.2', 'vlanid': 2},
 {'interface': 'FastEthernet 0/2', 'ipadress': '192.168.1.3', 'vlanid': 2},
 {'interface': 'FastEthernet 1/0', 'ip address': '192.168.1.4', 'vlanid': 3}]
+
+
+
+#Example 2 - printing all elements using loop for
+#input
+guestlist = [
+                ('Mark', 28, 'male'),
+                ('Mathew', 22, 'male'),
+                ('Martha', 32, 'female')
+             ]
+
+
+for name, age, sex in guestlist:
+    print("name: ", name )
+    print("age: ", age)
+    print("sex: ", sex )
+    print()
+
+#output
+
+name:  Mark
+age:  28
+sex:  male
+
+name:  Mathew
+age:  22
+sex:  male
+
+name:  Martha
+age:  32
+sex:  female
