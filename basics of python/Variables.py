@@ -2,7 +2,7 @@
 Variable - label mapped to the object.
 Rules in assigning variables:
 - Must start with letter or underscore character
-- Can't strt with number.
+- Can't start with number.
 - Name is case sensitive.
 """
 #example
@@ -37,9 +37,9 @@ Build in operations for working with numbers:
  - - subtract
  * - multiply
  / - divide
- // - integer division
- % - modulus
- ** - exponent
+ // - integer division(dzielenie w dół)
+ % - modulus - returns rest from dividing
+ ** - exponent(potęgowanie)
 
 Compariasion operations:
 
@@ -49,4 +49,30 @@ Compariasion operations:
 >= Greater than or equal
 == equal
 != not equal
+Tips:
+\ - tells to python that next mark is exacly what it means. Example:
+'I \'am Jacob' - used only when using single '' is used.
+
+type - command which allows to chech what kind of variable it is.
+Boolean - True or False must be written in upper case.
+
+Python is case sensitive.
+
+Camel case - Make bigger letter to see diffrence in two words matched together exampe:
+ bigBoy
+
+a , b , c = 1 , 3 , 4 - Method of assignig values to variables in one line. It
+can be used to diffrent types of variables.
+
+Usefull shortcuts:
+
++= - adding to variable specific value ex: x = x + 5 : x += 5
+-= - substracting from value ex: x = x - 5 : x -= 5
+*=
+/=
+%=
+//=
+**=
+
+
 """
